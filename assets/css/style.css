@@ -21,21 +21,6 @@ main {
     text-align: center;
 }
 
-/**/
-/************FOOTER************/
-.footerDiv {
-    width: 50%;
-    margin: auto;
-    text-align: left;
-    background-color: white;
-    line-height: 64px;
-}
-
-.footerDiv img {
-    float: right;
-    background-color: white;
-}
-
 /**********************************MODULES***********************************/
 /**/
 /************NAVBAR************/
@@ -114,13 +99,12 @@ h3::first-letter {
 /**/
 /************SLIDER************/
 .sliderDiv {
-    width: 50%;
-    margin: auto;
+    display: block;
+    height: 405.75px;
 }
 
 .sliderDiv img {
-    display: block;
-    max-width: 100%;
+    width: 50%;
 }
 
 /**/
@@ -133,52 +117,60 @@ h3::first-letter {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.panneau1, .panneau2, .panneau3 {
+
+.panneauxDiv div {
     display: inline-block;
-    vertical-align: top;
     width: 30%;
     text-align: justify;
     margin: 5px;
-    background-color: white;
-}
-
-.panneau2 a, .panneau3 a {
-    padding: 10px;
-    padding-bottom: 20px;
-    color: white;
-}
-.headDiv {
-    height: 437px;
-    margin-bottom: 35px;   
 }
 
 /***ARTICLES***/
-
-.item1Div, .item2Div, .item3Div {
-    visibility: hidden;
+.itemsDiv {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
     background-color: white;
+    color: rgb(7, 7, 7);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.itemsDiv a {
+    background-color: rgb(109, 97, 88);
+    padding: 8px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.itemsDiv div {
+    background-color: white;
+    display: inline-block;
+    width: 30%;
     vertical-align: top;
-    padding-top: 40px;
-    color: black;
+    margin: 5px;
 }
-.item1Div li {
-    background-color: white;
+
+.item ul {
+
     list-style-image: url("./img/arrow.png");
+    list-style-position: inside;
+
+}
+
+.itemsDiv li {
+    padding: 0;
+    text-align: justify;
     list-style-position: outside;
-    margin-left: 20px;
-}
-.item1Div ul {
-    background-color: white;
-}
-.item2Div p, .item3Div p {
-    background-color: white;
-}
-.item1Div li {
-    margin-top: 10px;
+    list-style-image: url("./img/arrow.png");
     background-color: white;
 }
 
-/**********************************STATE***********************************/
+.itemsDiv p {
+    text-align: justify;
+    background-color: white;
+}
+
+/**********************************MODULES***********************************/
 a {
     color: rgb(100, 45, 52);
     text-decoration: none;
@@ -203,17 +195,15 @@ strong {
     max-width: 100%;
 }
 
-.panneauBtn1,
-.panneauBtn2,
-.panneauBtn3 {
+
+
+.panneauBtn {
     padding-top: 20px;
     float: right;
-}
-.headDiv:hover + .item1Div, .headDiv:hover + .item2Div,.headDiv:hover + .item3Div {
-    visibility: visible;
 }
 
 p img {
     background-color: white;
     float: right;
+    position: relative;
 }
