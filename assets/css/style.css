@@ -1,0 +1,219 @@
+/**********************************COMMON***********************************/
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(109, 97, 88);
+}
+
+/**********************************LAYOUTS***********************************/
+/**/
+/************HEADER************/
+header {
+    display: block;
+    text-align: center;
+}
+
+/**/
+/************MAIN************/
+main {
+    display: block;
+    text-align: center;
+}
+
+/**/
+/************FOOTER************/
+.footerDiv {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    background-color: white;
+    line-height: 64px;
+}
+
+.footerDiv img {
+    float: right;
+    background-color: white;
+}
+
+/**********************************MODULES***********************************/
+/**/
+/************NAVBAR************/
+.navbar {
+    display: inline-block;
+    width: 50%;
+}
+
+.navbar a {
+    background-color: white;
+}
+
+.navbar ul {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: white;
+}
+
+.navbar li {
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px;
+    background-color: white;
+    margin-top: 0;
+}
+
+.navbar li:hover {
+    background-color: rgb(100, 45, 52);
+}
+
+.navbar li:hover a {
+    color: white;
+    background-color: rgb(100, 45, 52);
+}
+
+/**/
+/************TITLES************/
+/***H1***/
+h1 {
+    display: block;
+    font-family: Arial;
+    font-size: 4em;
+    font-stretch: extra-condensed;
+    letter-spacing: -3px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+/***H2***/
+h2 {
+    text-align: center;
+    font-size: 1em;
+    background-color: rgb(100, 45, 52);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/***H3***/
+h3 {
+    background-color: white;
+    text-align: left;
+    color: rgb(128, 125, 125);
+    padding-bottom: 20px;
+}
+
+h3::first-letter {
+    color: rgb(99, 96, 96);
+}
+
+/**/
+/************SLIDER************/
+.sliderDiv {
+    width: 50%;
+    margin: auto;
+}
+
+.sliderDiv img {
+    display: block;
+    max-width: 100%;
+}
+
+/**/
+/************PANNEAUX************/
+.panneauxDiv {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.panneau1, .panneau2, .panneau3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: justify;
+    margin: 5px;
+    background-color: white;
+}
+
+.panneau2 a, .panneau3 a {
+    padding: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+.headDiv {
+    height: 437px;
+    margin-bottom: 35px;   
+}
+
+/***ARTICLES***/
+
+.item1Div, .item2Div, .item3Div {
+    visibility: hidden;
+    background-color: white;
+    vertical-align: top;
+    padding-top: 40px;
+    color: black;
+}
+.item1Div li {
+    background-color: white;
+    list-style-image: url("./img/arrow.png");
+    list-style-position: outside;
+    margin-left: 20px;
+}
+.item1Div ul {
+    background-color: white;
+}
+.item2Div p, .item3Div p {
+    background-color: white;
+}
+.item1Div li {
+    margin-top: 10px;
+    background-color: white;
+}
+
+/**********************************STATE***********************************/
+a {
+    color: rgb(100, 45, 52);
+    text-decoration: none;
+}
+
+strong {
+    font-family: "Alata";
+    font-size: 1em;
+    color: rgb(100, 45, 52);
+    font-weight: 600;
+    background-color: white;
+    letter-spacing: normal;
+}
+
+#My,
+#Home,
+#Space {
+    background-color: white;
+}
+
+.panneauPic {
+    max-width: 100%;
+}
+
+.panneauBtn1,
+.panneauBtn2,
+.panneauBtn3 {
+    padding-top: 20px;
+    float: right;
+}
+.headDiv:hover + .item1Div, .headDiv:hover + .item2Div,.headDiv:hover + .item3Div {
+    visibility: visible;
+}
+
+p img {
+    background-color: white;
+    float: right;
+}
