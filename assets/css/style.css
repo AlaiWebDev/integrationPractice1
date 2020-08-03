@@ -191,15 +191,20 @@ strong {
     background-color: white;
 }
 
-.panneauPic {
+#panneau1Pic,
+#panneau2Pic,
+#panneau3Pic {
     max-width: 100%;
 }
 
-
-
-.panneauBtn {
-    padding-top: 20px;
+.plus_btn {
     float: right;
+}
+
+#panneau1Btn,
+#panneau2Btn,
+#panneau3Btn {
+    padding-top: 20px;
 }
 
 p img {
